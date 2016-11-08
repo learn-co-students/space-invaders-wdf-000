@@ -12,9 +12,9 @@ class Spaceship {
       this.docked = true;
     } else {
       this.docked = false;
-      var ship = this;
-      crewMembers.forEach(function(crewMember) {
-        crewMember.currentShip = ship;
+      // var ship = this;
+      crewMembers.forEach((crewMember) => {
+        crewMember.currentShip = this;
       });
     }
   }
